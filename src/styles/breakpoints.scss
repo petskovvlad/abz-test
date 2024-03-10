@@ -1,0 +1,21 @@
+$sm: 360px;
+$md: 768px;
+$lg: 1024px;
+
+@mixin for-small {
+  @media screen and (max-width: ($sm - 1)) {
+    @content;
+  }
+}
+
+@mixin for-medium {
+  @media screen and (min-width: ($sm + 1)) and (max-width: ($md - 1)) {
+    @content;
+  }
+}
+
+@mixin for-large {
+  @media screen and (min-width: $md) and (max-width: ($lg - 1)) {
+    @content;
+  }
+}

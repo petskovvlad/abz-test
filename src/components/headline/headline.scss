@@ -1,0 +1,57 @@
+@import '../../styles/breakpoints.scss';
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url('https://s3-alpha-sig.figma.com/img/4d58/d7f0/5205809f3a89f4261f915140e97786b8?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EC~Wa99OH4WyLLWMLh-ry2-2eoUvI38wrio4tcmnMw70WVIWYVgifnuSGkUmybeEHK66~neO~0ttSdNEJP9oPKLsaJvExF6oDAxTrkVdVJ4tfzzM3bxrORQkEjOLTnhh8peA1Rpf-wpuz1K1pFHWqtZCFw0KFlgzwis6CO2ig2O6U9hw1O2LyGCqLBDqS2eSeY8T46PKIO0P3WPWI5SQzGkgOpY~oD9F~A8Y69P7RZnqqrS2H~t6i0KnEJvgKOCHRl6v~tKGHJswY2ZMTs9PWLsHL4pI7hcEYi0wNRJRqHW54vAHFKSas56AJ4e9v~FujSq07dZ86vv2A1~bOuvSsw__');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: lightgray;
+
+  height: 650px;
+
+  @include for-small {
+    max-width: 360px;
+  }
+
+  &__title {
+    width: 380px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+
+    @include for-small {
+      max-width: 328px;
+    }
+  }
+
+  &__description {
+    width: 380px;
+    margin: 0;
+    padding: 0;
+    margin-top: 21px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+
+    @include for-small {
+      max-width: 328px;
+    }
+  }
+
+  &__action-btn {
+    margin-top: 32px;
+  }
+}

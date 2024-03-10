@@ -1,0 +1,48 @@
+@import './styles/breakpoints.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: Nunito;
+  &::-webkit-scrollbar {
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.page {
+  max-width: 1170px;
+  margin: auto;
+
+  @include for-small {
+    max-width: 360px;
+  }
+
+  @include for-medium {
+    max-width: 768px;
+  }
+
+  @include for-large {
+    max-width: 1024px;
+  }
+}
+
+.action-button {
+  border-radius: 80px;
+  width: 100px;
+  height: 34px;
+  border: none;
+  padding: 0;
+  background-color: #f4e041;
+  cursor: pointer;
+}
